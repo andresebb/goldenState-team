@@ -1,1 +1,1 @@
-# goldenState-team
+# Golden State Team
