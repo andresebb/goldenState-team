@@ -5,6 +5,7 @@ import React from "react";
 import { Provider } from "react-redux";
 import store from "./store";
 import Players from "./components/Players";
+import SelectedTeam from "./components/SelectedTeam";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <main>
         <h1>Golden State team</h1>
         <Players />
+        <SelectedTeam />
       </main>
     </Provider>
   );
