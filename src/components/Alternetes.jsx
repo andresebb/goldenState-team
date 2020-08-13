@@ -4,20 +4,24 @@ import { removeAlternetes } from "../actions";
 
 const Alternetes = ({ suplentes, removeAlternetes }) => {
   return (
-    <section>
-      <h2>Alternetes</h2>
-      <div className="field">
-        {suplentes.map((j) => (
-          <article className="holder" key={j.id}>
-            <div>
-              <img src={j.image} alt="" />
-              <button onClick={() => removeAlternetes(j)}>x</button>
-            </div>
-            <p>{j.name}</p>
-          </article>
-        ))}
-      </div>
-    </section>
+    <>
+      <section className="alternetes__container">
+        <h2>Alternetes</h2>
+        <div className="alternetes">
+          {suplentes.map((j) => (
+            <article className="alternete" key={j.id}>
+              <div>
+                <img src={j.image} alt="" />
+                <button className="remove" onClick={() => removeAlternetes(j)}>
+                  x
+                </button>
+              </div>
+              <p>{j.name}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

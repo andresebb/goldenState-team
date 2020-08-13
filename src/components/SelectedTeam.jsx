@@ -4,7 +4,7 @@ import Alternetes from "./Alternetes";
 
 const SelectedTeam = () => {
   return (
-    <section>
+    <section className="selectTeam__container">
       <Holders />
       <Alternetes />
     </section>

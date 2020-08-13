@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import Players from "./components/Players";
 import SelectedTeam from "./components/SelectedTeam";
+import "./styles/styles.scss";
 
 const App = () => {
   return (

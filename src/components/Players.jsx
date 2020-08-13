@@ -9,13 +9,23 @@ const Players = ({ jugadores, addHolder, addAlternete }) => {
       <h2>Players</h2>
       <div className="players__container">
         {jugadores.map((j) => (
-          <article key={j.id}>
+          <article key={j.id} className="player">
             <img src={j.image} alt={j.name} />
             <h3>{j.name}</h3>
-            <p>Position: {j.position}</p>
-            <div>
-              <button onClick={() => addHolder(j)}>Holders</button>
-              <button onClick={() => addAlternete(j)}>Alternetes</button>
+            <p>
+              <span>Position: </span>
+              {j.position}
+            </p>
+            <div className="btn__container">
+              <button className="btn holderBtn" onClick={() => addHolder(j)}>
+                Holders
+              </button>
+              <button
+                className="btn alterneteBtn"
+                onClick={() => addAlternete(j)}
+              >
+                Alternetes
+              </button>
             </div>
           </article>
         ))}
