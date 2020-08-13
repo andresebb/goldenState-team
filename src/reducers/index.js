@@ -28,6 +28,22 @@ const reducer = (state, action) => {
       players: state.players.filter((j) => j.id !== action.jugador.id),
     };
   }
+
+  if (action.type === "REMOVE_HOLDER") {
+    return {
+      ...state,
+      holders: state.holders.filter((j) => j.id !== action.jugador.id),
+      players: state.players.concat(action.jugador),
+    };
+  }
+
+  if (action.type === "REMOVE_AlTERNETES") {
+    return {
+      ...state,
+      alternetes: state.alternetes.filter((j) => j.id !== action.jugador.id),
+      players: state.players.concat(action.jugador),
+    };
+  }
   return state;
 };
 

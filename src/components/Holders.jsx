@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { removeHolder } from "../actions";
 
-const Holders = ({ titulares }) => {
+const Holders = ({ titulares, removeHolder }) => {
   return (
     <section>
       <h2>Holders</h2>
@@ -10,7 +11,7 @@ const Holders = ({ titulares }) => {
           <article className="holder" key={j.id}>
             <div>
               <img src={j.image} alt="" />
-              <button>x</button>
+              <button onClick={() => removeHolder(j)}>x</button>
             </div>
             <p>{j.nombre}</p>
           </article>
@@ -24,4 +25,8 @@ const mapStateToProps = (state) => ({
   titulares: state.holders,
 });
 
-export default connect(mapStateToProps, null)(Holders);
+const mapDispatchToProps = {
+  removeHolder,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Holders);

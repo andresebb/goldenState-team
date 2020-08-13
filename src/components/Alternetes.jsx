@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { removeAlternetes } from "../actions";
 
-const Alternetes = ({ suplentes }) => {
+const Alternetes = ({ suplentes, removeAlternetes }) => {
   return (
     <section>
       <h2>Alternetes</h2>
@@ -10,7 +11,7 @@ const Alternetes = ({ suplentes }) => {
           <article className="holder" key={j.id}>
             <div>
               <img src={j.image} alt="" />
-              <button>x</button>
+              <button onClick={() => removeAlternetes(j)}>x</button>
             </div>
             <p>{j.name}</p>
           </article>
@@ -24,4 +25,8 @@ const mapStateToProps = (state) => ({
   suplentes: state.alternetes,
 });
 
-export default connect(mapStateToProps, null)(Alternetes);
+const mapDispatchToProps = {
+  removeAlternetes,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(Alternetes);
