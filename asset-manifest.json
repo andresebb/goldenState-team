@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/goldenState-team/static/css/main.0d52d90a.chunk.css",
+    "main.js": "/goldenState-team/static/js/main.cbbe3cad.chunk.js",
+    "main.js.map": "/goldenState-team/static/js/main.cbbe3cad.chunk.js.map",
+    "runtime-main.js": "/goldenState-team/static/js/runtime-main.e15fc9dc.js",
+    "runtime-main.js.map": "/goldenState-team/static/js/runtime-main.e15fc9dc.js.map",
+    "static/js/2.3d3e4b4b.chunk.js": "/goldenState-team/static/js/2.3d3e4b4b.chunk.js",
+    "static/js/2.3d3e4b4b.chunk.js.map": "/goldenState-team/static/js/2.3d3e4b4b.chunk.js.map",
+    "index.html": "/goldenState-team/index.html",
+    "precache-manifest.922a42bddb6dbe7a45e6340663c4e25b.js": "/goldenState-team/precache-manifest.922a42bddb6dbe7a45e6340663c4e25b.js",
+    "service-worker.js": "/goldenState-team/service-worker.js",
+    "static/css/main.0d52d90a.chunk.css.map": "/goldenState-team/static/css/main.0d52d90a.chunk.css.map",
+    "static/js/2.3d3e4b4b.chunk.js.LICENSE.txt": "/goldenState-team/static/js/2.3d3e4b4b.chunk.js.LICENSE.txt",
+    "static/media/fieldOriginal.jpg": "/goldenState-team/static/media/fieldOriginal.09360ee0.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e15fc9dc.js",
+    "static/js/2.3d3e4b4b.chunk.js",
+    "static/css/main.0d52d90a.chunk.css",
+    "static/js/main.cbbe3cad.chunk.js"
+  ]
+}
