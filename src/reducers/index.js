@@ -14,11 +14,18 @@ const reducer = (state, action) => {
   /* console.log(state); */
 
   if (action.type === "ADD_HOLDER") {
-    return {
-      ...state,
-      holders: state.holders.concat(action.jugador),
-      players: state.players.filter((j) => j.id !== action.jugador.id),
-    };
+    console.log(state.holders);
+    const largura = Object.keys(state.holders);
+    const largo = largura.length;
+    if (largo >= 5) {
+      alert("No puedes agregar mas de 5 jugadores");
+    } else {
+      return {
+        ...state,
+        holders: state.holders.concat(action.jugador),
+        players: state.players.filter((j) => j.id !== action.jugador.id),
+      };
+    }
   }
 
   if (action.type === "ADD_ALTERNETE") {
