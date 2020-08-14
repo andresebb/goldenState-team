@@ -2,7 +2,7 @@
 
 Here you can choose between holders and alternetes
 
-![social](https://raw.githubusercontent.com/andresebb/goldenState-team/master/src/styles/images/23.png)
+![social](https://raw.githubusercontent.com/andresebb/goldenState-team/master/src/styles/images/23.PNG)
 
 
 ### `Git clone to this repository`
